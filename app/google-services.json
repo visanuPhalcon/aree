@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "707405304200",
+    "firebase_url": "https://aree-20675.firebaseio.com",
+    "project_id": "aree-20675",
+    "storage_bucket": "aree-20675.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707405304200:android:1bfd6248500962f7",
+        "android_client_info": {
+          "package_name": "com.aree.restaurant.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707405304200-8ss43k36sph7f2c7r7molcokhk4u7lle.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aree.restaurant.app",
+            "certificate_hash": "8aeb8aaac9216bbc65891aa1f0409449ef04b3da"
+          }
+        },
+        {
+          "client_id": "707405304200-9d2ik92uf30liib5rqa5uv5phfh96nlm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVAuPy-pkolX0_PlPcLZItGJRj3IwJkzE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707405304200-9d2ik92uf30liib5rqa5uv5phfh96nlm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

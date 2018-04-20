@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.aree.restaurant.app.activity.OrderActivity">
+
+
+        <LinearLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/appbar_layout"
+                android:id="@+id/included"/>
+
+            <com.ogaclejapan.smarttablayout.SmartTabLayout
+                android:id="@+id/viewPagerTab"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/bg_orange"
+                app:stl_distributeEvenly="true"
+                app:stl_indicatorColor="@color/colorWhite"
+                app:stl_indicatorInterpolation="linear"
+                app:stl_indicatorThickness="5dp"
+                app:stl_underlineThickness="0dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true">
+
+            <com.aree.restaurant.app.views.BasketView
+                android:id="@+id/basketView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <com.sothree.slidinguppanel.SlidingUpPanelLayout
+            xmlns:sothree="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/sliding_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tab"
+            android:gravity="bottom"
+            sothree:umanoScrollableView="@+id/recyclerView"
+            sothree:umanoPanelHeight="30dp"
+            sothree:umanoShadowHeight="6dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:layout_above="@+id/PointSection"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:paddingRight="8dp"
+                            android:paddingLeft="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <TextView
+                                android:paddingRight="10dp"
+                                android:id="@+id/tvMenu"
+                                style="@style/AppTheme.Text.Bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/colorGrey"
+                                android:text="รายการอาหาร"/>
+
+                            <TextView
+                                android:paddingRight="10dp"
+                                android:layout_toRightOf="@+id/tvMenu"
+                                android:gravity="center"
+                                style="@style/AppTheme.Text.Bold"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvTotalMenu"
+                                android:text=" 0 รายการ"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_marginRight="8dp"
+                                android:id="@+id/imgArrow"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/ic_arrow_up"
+                                android:tint="@color/colorGrey"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/orderList"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recyclerView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </android.support.v7.widget.RecyclerView>
+
+                            <!--<com.aree.restaurant.app.views.OrderItem-->
+                                <!--android:id="@+id/orderList"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"/>-->
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/PointSection"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_above="@+id/totalSection">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="16dp"
+                            style="@style/AppTheme.Text.White"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textSize="24sp"
+                            android:text="คะแนนรวม"/>
+
+                        <TextView
+                            android:id="@+id/tvTotalPoint"
+                            android:textStyle="bold"
+                            android:layout_marginRight="16dp"
+                            style="@style/AppTheme.Text.White"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:textSize="24sp"
+                            android:text=""/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/totalSection"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_above="@+id/btnConfirmOrder">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="16dp"
+                            style="@style/AppTheme.Text.White"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textSize="24sp"
+                            android:text="@string/label_total"/>
+
+                        <TextView
+                            android:id="@+id/tvTotalCost"
+                            android:textStyle="bold"
+                            android:layout_marginRight="16dp"
+                            style="@style/AppTheme.Text.White"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:textSize="24sp"
+                            android:text=""/>
+
+                    </RelativeLayout>
+
+
+
+
+
+
+                    <Button
+                            android:enabled="false"
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/btnConfirmOrder"
+                            style="@style/AppTheme.Button.Orange.Non.Round"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_confirm_order"
+                            />
+
+
+
+                </RelativeLayout>
+            </FrameLayout>
+        </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+    </RelativeLayout>
+</layout>
+

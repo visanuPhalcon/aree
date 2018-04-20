@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                              
+                                                         
+
+    <RelativeLayout
+
+        android:layout_margin="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp" android:tag="layout/cell_menu_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/imgFoodMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+        <TextView
+            android:paddingLeft="4dp"
+            android:paddingTop="1dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="top|left|center"
+            android:textSize="12sp"
+            android:text=""
+            android:id="@+id/tvNameMenu"
+            style="@style/AppTheme.Text.White"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/colorBlackOpacity"/>
+
+
+        <TextView
+            android:paddingRight="4dp"
+            android:gravity="right|bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:text=""
+            android:id="@+id/tvPrice"
+            style="@style/AppTheme.Text.White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </RelativeLayout>
+         

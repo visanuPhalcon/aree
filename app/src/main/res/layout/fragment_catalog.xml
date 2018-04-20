@@ -1,0 +1,113 @@
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.aree.restaurant.app.fragment.CatalogFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/menuPromotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@drawable/bg_green"
+                    android:paddingLeft="16dp">
+
+                    <TextView
+                        style="@style/AppTheme.Text.Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="18sp"
+                        android:text="@string/label_promotion"/>
+                </RelativeLayout>
+
+                <!--<RelativeLayout-->
+                    <!---->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="?attr/actionBarSize"-->
+                    <!--android:background="@drawable/bg_orange"-->
+                    <!--android:paddingLeft="16dp">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/AppTheme.Text.Bold"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:textSize="18sp"-->
+                        <!--android:text="@string/label_food_list"/>-->
+                <!--</RelativeLayout>-->
+
+
+                <RelativeLayout
+                    android:id="@+id/menuRice"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_rice">
+
+                    <TextView
+                        style="@style/AppTheme.Text.White"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_menu_rice"
+                        android:paddingLeft="10dp"
+                        android:background="@color/colorBlackOpacity"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/menuNoodles"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_noodle">
+
+                    <TextView
+                        style="@style/AppTheme.Text.White"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_menu_noodles"
+                        android:paddingLeft="10dp"
+                        android:background="@color/colorBlackOpacity"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/menuDessert"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_dessert">
+
+                    <TextView
+                        style="@style/AppTheme.Text.White"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_menu_dessert"
+                        android:paddingLeft="10dp"
+                        android:background="@color/colorBlackOpacity"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/menuBeverages"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/water">
+
+                    <TextView
+                        style="@style/AppTheme.Text.White"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_menu_beverages"
+                        android:paddingLeft="10dp"
+                        android:background="@color/colorBlackOpacity"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Aree</string>
+    <string name="label_ok">ตกลง</string>
+    <string name="label_cancel">ยกเลิก</string>
+    <string name="label_confirm">ยืนยัน</string>
+    <string name="label_loading">กำลังโหลด...</string>
+    <string name="label_processing">กำลังประมวลผล...</string>
+    <string name="label_main">หน้าหลัก</string>
+    <string name="label_term_and_con">ข้อตกลง &amp; เงื่อนไขการใช้งาน</string>
+    <string name="label_accept">ยอมรับ</string>
+    <string name="label_register">ลงทะเบียน</string>
+    <string name="label_username_or_phone">อีเมล์</string>
+    <string name="label_sign_in">เข้าสู่ระบบ</string>
+    <string name="label_forgot_password">ลืมรหัสผ่าน</string>
+    <string name="label_promotion">โปรโมชั่น</string>
+    <string name="label_menu_rice">เมนูข้าว</string>
+    <string name="label_menu_noodles">เมนูเส้น</string>
+    <string name="label_menu_dessert">ทานเล่น</string>
+    <string name="label_menu_beverages">เครื่องดื่ม</string>
+    <string name="label_food_list">รายการอาหาร</string>
+    <string name="label_confirm_order">ยืนยันการสั่งซื้อ</string>
+    <string name="label_total">ยอดรวม</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_forget_password">ลืมรหัสผ่าน / </string>
+    <string name="label_LastName">นามสกุล</string>
+    <string name="label_FirstName">ชื่อจริง</string>
+    <string name="label_fyi">( กรุณากรอกข้อมูลที่ถูกต้อง เพื่อเป็นหลักฐานในการแลกของรางวัลกับทางร้าน ขอขอบพระคุณเป็นอย่างสูง )</string>
+    <string name="label_set_password">ตั้งรหัสผ่าน</string>
+    <string name="label_insert_password_again">ป้อนรหัสผ่านอีกครั้ง</string>
+    <string name="label_insert_email">อีเมล์</string>
+    <string name="label_insert_username">ชื่อผู้ใช้งาน</string>
+
+    <string name="label_insert_birth_day">วันเดือนปีเกิด:</string>
+    <string name="label_insert_phone_number">เบอร์โทรศัพท์มือถือ</string>
+    <string name="label_insert_phone_number_company">เบอร์โทรศัพท์บริษัท</string>
+    <string name="label_company_name">ชื่อบริษัท</string>
+    <string name="label_insert_floor_number">ชั้น</string>
+    <string name="label_order_food">คลิกเพื่อสั่งอาหาร</string>
+    <string name="label_menu_list">รายการอาหารทะเล</string>
+    <string name="label_beverage_list">รายการน้ำ</string>
+    <string name="label_cart_shop">ตะกร้า</string>
+    <string name="label_thank_you" formatted="false">ร้าน Areecafe \nได้รับ Order ของท่านแล้ว \nขอบคุณที่ใช้บริการครับ</string>
+    <string name="label_call_center">โปรดใช้หมายเลขสั่งซื้อ : # %1$s \nเพื่อยืนยันการรับของ\n\nพบปัญหาติดต่อ \n081-454-7456</string>
+    <string name="label_go_to_main_menu">กลับสู่เมนูหลัก</string>
+    <string name="label_free_shipping">( ค่าจัดส่งฟรี )</string>
+    <string name="label_redeem_reward">แลกของรางวัล</string>
+    <string name="label_regist">สมัครสมาชิก</string>
+    <string name="label_email_exist">อีเมล์นี้มีผู้ใช้แล้ว กรุณากรอกใหม่</string>
+    <string name="label_regist_success">การสมัครสมาชิกเสร็จสิ้น</string>
+    <string name="label_login_unsuccessfully">ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง กรุณากรอกใหม่</string>
+    <string name="label_login">เข้าสู่ระบบ</string>
+    <string name="label_list_order_admin">รายการ</string>
+    <string name="label_menu_admin">เมนู</string>
+    <string name="label_sale_summary_admin">สรุปยอด</string>
+    <string name="label_history">ประวัติ</string>
+    <string name="label_welcome">ยินดีต้อนรับสู่ AREE CAFE</string>
+    <string name="label_order">รับ Order</string>
+    <string name="label_order_detail">รายละเอียดการสั่งอาหาร</string>
+    <string name="label_get_order">รับ Order</string>
+    <string name="label_shipping">จัดส่ง</string>
+    <string name="label_delivery_successfully">ส่งสำเร็จ</string>
+    <string name="label_admin_confirm_order">ยืนยันการรับออเดอร์</string>
+    <string name="label_admin_confirm_delivery">ยืนยันการส่งออเดอร์</string>
+    <string name="label_admin_confirm_done_delivery">ยืนยันการปิดยอดขาย</string>
+    <string name="label_error_fail_to_connect">เกิดความขัดข้องในการเชื่อมต่อ กรุณาลองใหม่อีกครั้ง</string>
+    <string name="label_fail_to_connect">การเชื่อมต่อล้มเหลว</string>
+    <string name="label_internet_isnot_available">ไม่มีสัญญาณอินเตอร์เน็ต</string>
+    <string name="label_error_internet_isnot_available">ไม่มีสัญญาณอินเตอร์เน็ต กรุณาตรวจสอบสถานะการเชื่อมต่อ</string>
+    <string name="label_log_in">เข้าสู่ระบบ</string>
+    <string name="label_please_login_before_buying">กรุณาเข้าสู่ระบบ ก่อนยืนยันการสั่งซื้อ</string>
+    <string name="label_delete_row_order_admin">ลบรายการสั่งซื้อ</string>
+    <string name="label_log_out">ออกจากระบบ</string>
+    <string name="label_log_out_message">คุณต้องการออกจากระบบหรือไม่ ?</string>
+    <string name="label_order_history">ประวัติการสั่งซื้อ</string>
+    <string name="label_cancel_order">ถูกยกเลิก</string>
+    <string name="label_wait_to_get_order">รอรับ Order</string>
+    <string name="label_ship_to_customer">กำลังจัดส่ง</string>
+    <string name="label_server_fail">เซฟเวอร์ล้มเหลว</string>
+    <string name="label_server_fail_to_response">เซฟเวอร์ไม่สามารถให้บริการได้ในขณะนี้</string>
+    <string name="label_cilent_fail">ล้มเหลวในการเชื่อมต่อ</string>
+    <string name="label_fail_to_connect_server">ไม่สามารถเชื่อมต่อกับเซฟเวอร์ได้ในขณะนี้</string>
+    <string name="label_exchange_reward">คลิกเพื่อแลกรางวัล</string>
+    <string name="label_redeem">รางวัล</string>
+    <string name="label_set_time">ัจัดเวลา</string>
+    <string name="label_title_closed_shop">ร้านปิดบริการ</string>
+    <string name="label_message_closed_shop">วันนี้ร้านปิดบริการ ขออภัยในความไม่สะดวก</string>
+    <string name="label_edit_profile">แก้ไขข้อมูลส่วนตัว</string>
+    <string name="label_title_edit_profile">แก้ไขข้อมูลส่วนตัว</string>
+    <string name="label_edit_succesfully">แก้ไขข้อมูลตัวสำเร็จ</string>
+    <string name="label_title_cant_update_status">ไม่สามารถอัพเดทสถานะได้</string>
+    <string name="label_message_cant_update_status">ไม่สามารถอัพเดทได้ เนื่องจากคะแนนไม่พอ</string>
+    <string name="downloading">Downloading...</string>
+
+
+    <string-array name="menu_list">
+        <item>@string/label_promotion</item>
+        <item>@string/label_menu_rice</item>
+        <item>@string/label_menu_noodles</item>
+        <item>@string/label_menu_dessert</item>
+        <item>@string/label_menu_beverages</item>
+    </string-array>
+
+
+    <string-array name="menu_admin">
+        <item>@string/label_list_order_admin</item>
+        <item>@string/label_menu_admin</item>
+        <item>@string/label_sale_summary_admin</item>
+        <item>@string/label_history</item>
+        <item>@string/label_set_time</item>
+        <item>@string/label_redeem</item>
+        <item>@string/label_history</item>
+    </string-array>
+
+
+    <string-array name="menu_staff">
+        <item>@string/label_list_order_admin</item>
+        <item>@string/label_menu_admin</item>
+    </string-array>
+</resources>

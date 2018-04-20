@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.loopeer.library:itemtouchhelperextension-1.0.5">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/itemtouchhelperextension-1.0.5.aar/8db5c396ac4a60358ffb5d3f21f55e1d/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/itemtouchhelperextension-1.0.5.aar/8db5c396ac4a60358ffb5d3f21f55e1d/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.loopeer.library/itemtouchhelperextension/1.0.5/c25e16007acc7fbda577cfbc18358acc103f8d36/itemtouchhelperextension-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

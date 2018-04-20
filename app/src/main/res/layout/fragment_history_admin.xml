@@ -1,0 +1,64 @@
+
+<layout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/SwipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_above="@+id/line1"
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"  >
+
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:alpha=".3"
+                android:background="@color/colorGrey"
+                android:layout_above="@id/totalSection"
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <RelativeLayout
+                android:id="@+id/totalSection"
+                android:padding="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/colorOrange"
+                    android:textSize="18sp"
+                    android:layout_alignParentLeft="true"
+                    android:text="ยอดขายรวม"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="18sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</layout>

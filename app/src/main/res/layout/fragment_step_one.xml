@@ -1,0 +1,542 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.aree.restaurant.app.fragment.ShoppingCart.StepOneFragment">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/stepSection"
+                    app:layout_heightPercent="20%"
+                    android:background="#3078909c"
+                    android:layout_marginTop="-15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/StepOneOval"
+                        app:layout_marginLeftPercent="10%"
+                        app:layout_marginTopPercent="5%"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp">
+
+
+                        <View
+                            android:background="@drawable/fill_oval"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            />
+                        <TextView
+                            android:textSize="24sp"
+                            android:textColor="@color/colorWhite"
+                            android:layout_centerInParent="true"
+                            android:text="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        app:layout_marginLeftPercent="4%"
+                        android:textSize="16sp"
+                        android:layout_below="@+id/StepOneOval"
+                        android:text="รายการอาหาร"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_marginRight="-1dp"
+                        android:layout_marginLeft="-1dp"
+                        android:layout_toRightOf="@id/StepOneOval"
+                        android:layout_toLeftOf="@+id/StepTwoOval"
+                        android:background="@color/colorGrey"
+                        android:layout_centerInParent="true"
+                        android:layout_height="7dp"
+                        android:layout_width="match_parent"
+                        />
+
+                    <RelativeLayout
+                        android:layout_centerInParent="true"
+                        android:id="@+id/StepTwoOval"
+                        app:layout_marginTopPercent="5%"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp">
+
+
+                        <View
+                            android:background="@drawable/non_fill_oval"
+                            android:layout_height="40dp"
+                            android:layout_width="40dp"
+                            />
+                        <TextView
+                            android:textSize="24sp"
+                            android:textColor="@color/colorWhite"
+                            android:layout_centerInParent="true"
+                            android:text="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_marginLeft="-5dp"
+                        android:textStyle="bold"
+                        android:layout_alignLeft="@+id/StepTwoOval"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:layout_below="@+id/StepTwoOval"
+                        android:text="ชำระเงิน"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+
+                    <View
+                        android:layout_marginRight="-1dp"
+                        android:layout_marginLeft="-1dp"
+                        android:layout_toLeftOf="@+id/StepThreeOval"
+                        android:layout_toRightOf="@id/StepTwoOval"
+                        android:background="@color/colorGrey"
+                        android:layout_centerInParent="true"
+                        android:layout_height="7dp"
+                        android:layout_width="match_parent"
+                        />
+
+                    <RelativeLayout
+
+                        app:layout_marginRightPercent="10%"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/StepThreeOval"
+                        app:layout_marginTopPercent="5%"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp">
+
+
+                        <View
+                            android:background="@drawable/non_fill_oval"
+                            android:layout_height="40dp"
+                            android:layout_width="40dp"
+                            />
+                        <TextView
+                            android:textSize="24sp"
+                            android:textColor="@color/colorWhite"
+                            android:layout_centerInParent="true"
+                            android:text="3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        app:layout_marginRightPercent="9%"
+
+                        android:layout_alignParentRight="true"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:layout_below="@+id/StepThreeOval"
+                        android:text="เสร็จสิ้น"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </android.support.percent.PercentRelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ButtonSection"
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.percent.PercentRelativeLayout
+
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:textSize="22sp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:text="รวม"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tvTotal"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:textSize="22sp"
+                            android:layout_marginRight="16dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:text="฿ 348.00"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </android.support.percent.PercentRelativeLayout>
+
+                    <Button
+                        android:id="@+id/btnPickMore"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:text="เลือกรายการเพิ่มเติม"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:background="@drawable/bg_button_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnConfirmOrder"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:text="คลิกเพื่อยืนยัน"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:background="@drawable/bg_button_orange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+                <!-- Hard Code   -->
+
+                <ScrollView
+                    android:layout_above="@id/ButtonSection"
+                    android:layout_below="@id/stepSection"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent" >
+
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            >
+
+
+                            <RelativeLayout
+                                android:layout_margin="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imgCancel"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_cancel"/>
+
+                                <TextView
+                                    android:id="@+id/tvMenuName"
+                                    style="@style/AppTheme.Text.Bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_toRightOf="@+id/imgCancel"
+                                    android:textColor="@color/colorGrey"
+                                    android:layout_centerVertical="true"
+                                    android:text="ข้าวผัดกุ้งอารีย์"/>
+
+                                <TextView
+                                    style="@style/AppTheme.Text.Bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="@color/colorGrey"
+                                    android:layout_centerVertical="true"
+                                    android:text="฿ 86.00"/>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_margin="8dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:layout_gravity="right">
+
+                                <ImageView
+                                    android:id="@+id/imgRemove"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_remove"/>
+
+                                <TextView
+                                    style="@style/AppTheme.Text.Grey"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="1"/>
+
+                                <ImageView
+                                    android:id="@+id/imgAdd"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_add"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/colorGrey"/>
+
+
+                            <RelativeLayout
+                                android:layout_margin="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imgCancel1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_cancel"/>
+
+                                <TextView
+                                    android:id="@+id/tvMenuName1"
+                                    style="@style/AppTheme.Text.Bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_toRightOf="@+id/imgCancel1"
+                                    android:textColor="@color/colorGrey"
+                                    android:layout_centerVertical="true"
+                                    android:text="เกี้ยวช่า"/>
+
+                                <TextView
+                                    style="@style/AppTheme.Text.Bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="@color/colorGrey"
+                                    android:layout_centerVertical="true"
+                                    android:text="฿ 56.00"/>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_margin="8dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:layout_gravity="right">
+
+                                <ImageView
+                                    android:id="@+id/imgRemove2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_remove"/>
+
+                                <TextView
+                                    style="@style/AppTheme.Text.Grey"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="1"/>
+
+                                <ImageView
+                                    android:id="@+id/imgAdd2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_add"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/colorGrey"/>
+
+                            <RelativeLayout
+                                android:layout_margin="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imgCancel3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_cancel"/>
+
+                                <TextView
+                                    android:id="@+id/tvMenuName3"
+                                    style="@style/AppTheme.Text.Bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_toRightOf="@+id/imgCancel3"
+                                    android:textColor="@color/colorGrey"
+                                    android:layout_centerVertical="true"
+                                    android:text="กุ้งคั่วอารีย์"/>
+
+                                <TextView
+                                    style="@style/AppTheme.Text.Bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="@color/colorGrey"
+                                    android:layout_centerVertical="true"
+                                    android:text="฿ 78.00"/>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_margin="8dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:layout_gravity="right">
+
+                                <ImageView
+                                    android:id="@+id/imgRemove4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_remove"/>
+
+                                <TextView
+                                    style="@style/AppTheme.Text.Grey"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="2"/>
+
+                                <ImageView
+                                    android:id="@+id/imgAdd4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_add"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/colorGrey"/>
+                            <RelativeLayout
+                                android:layout_margin="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imgCancel5"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_cancel"/>
+
+                                <TextView
+                                    android:id="@+id/tvMenuName5"
+                                    style="@style/AppTheme.Text.Bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_toRightOf="@+id/imgCancel5"
+                                    android:textColor="@color/colorGrey"
+                                    android:layout_centerVertical="true"
+                                    android:text="ข้าวหมูเกาหลี"/>
+
+                                <TextView
+                                    style="@style/AppTheme.Text.Bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGrey"
+                                    android:text="฿ 50.00"
+                                    android:layout_alignBaseline="@+id/tvMenuName5"
+                                    android:layout_alignBottom="@+id/tvMenuName5"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentEnd="true" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_margin="8dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:layout_gravity="right">
+
+                                <ImageView
+                                    android:id="@+id/imgRemove5"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_remove"/>
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    style="@style/AppTheme.Text.Grey"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="1" />
+
+                                <ImageView
+                                    android:id="@+id/imgAdd5"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_add"/>
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                </ScrollView>
+                <!-- Hard Code   -->
+
+            </android.support.percent.PercentRelativeLayout>
+    </FrameLayout>
+</layout>

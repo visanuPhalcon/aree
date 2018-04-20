@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/activity_crop_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="Crop Image"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <com.isseiaoki.simplecropview.CropImageView
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cropImageView"
+            android:layout_below="@+id/action_bar"
+            android:layout_above="@+id/blogBottom"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            custom:scv_crop_mode="fit_image"
+            custom:scv_background_color="@color/colorBlack"
+            custom:scv_handle_color="@color/colorGreen"
+            custom:scv_guide_color="@color/colorGreen"
+            custom:scv_overlay_color="@color/colorTranslucent"
+            custom:scv_frame_color="@color/colorGreen"
+            custom:scv_handle_size="14dp"
+            custom:scv_touch_padding="8dp"
+            custom:scv_handle_show_mode="show_always"
+            custom:scv_guide_show_mode="show_always"
+            custom:scv_min_frame_size="100dp"
+            custom:scv_frame_stroke_weight="1dp"
+            custom:scv_guide_stroke_weight="1dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/blogBottom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@color/colorBlack">
+
+            <TextView
+                style="@style/AppTheme.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:layout_centerVertical="true"
+                android:text="1:1"/>
+
+            <ImageView
+                android:id="@+id/imgCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_done"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

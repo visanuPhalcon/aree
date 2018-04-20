@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+
+
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorOrange</item>
+    </style>
+
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.Text.Bold" parent="AppTheme.Text">
+        <item name="fontPath">fonts/SukhumvitSet-Medium.ttf</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.Text">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.Text.White" parent="AppTheme.Text">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.Text.Grey" parent="AppTheme.Text">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Fullscreen">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.Button">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppTheme.Button.Grey" parent="AppTheme.Button">
+        <item name="android:background">@drawable/bg_button_grey</item>
+    </style>
+
+    <style name="AppTheme.Button.Orange" parent="AppTheme.Button">
+        <item name="android:background">@drawable/bg_button_orange</item>
+    </style>
+
+    <style name="AppTheme.Button.Orange2" parent="AppTheme.Button">
+        <item name="android:background">@drawable/bg_button_orange2</item>
+    </style>
+
+    <style name="AppTheme.Button.Orange.Non.Round" parent="AppTheme.Button">
+        <item name="android:background">@drawable/bg_button_orange_non_round</item>
+    </style>
+
+    <style name="AppTheme.EditText">
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textColorHint">#a0b1b9</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="ThemeDialog" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+
+
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                            
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_term_and_con"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context="com.aree.restaurant.app.activity.TermAndConActivity" android:tag="layout/activity_term_and_con_0" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnRegister"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AppTheme.Text.White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:text="@string/label_term_and_con"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorWhite"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    style="@style/AppTheme.Text.Grey"
+                    android:id="@+id/chkAccept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:buttonTint="@color/colorGrey"
+                    android:text="@string/label_accept"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/AppTheme.Button.Orange2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_register"
+            android:enabled="false"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"/>
+    </RelativeLayout>
+         

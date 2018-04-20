@@ -1,0 +1,67 @@
+<layout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:id="@+id/tvDate"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_above="@+id/btnSend"
+                android:layout_below="@+id/tvDate"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/calendar"
+                    android:layout_width="fill_parent"
+                    android:paddingTop="32dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_height="wrap_content"
+                    app:compactCalendarTargetHeight="300dp"
+                    app:compactCalendarTextSize="16sp"
+                    app:compactCalendarTextColor="@color/colorOrange"
+                    app:compactCalendarCurrentSelectedDayBackgroundColor="@color/colorGreen"
+                    app:compactCalendarCurrentDayBackgroundColor="@color/colorBlue"
+                    app:compactCalendarCurrentDayTextColor="@color/colorWhite"
+                    app:compactCalendarMultiEventIndicatorColor="@color/colorOrange"
+                    app:compactCalendarCurrentSelectedDayTextColor="@color/colorWhite"
+
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_margin="16dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/btnSend"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_button_orange"
+                android:textColor="@color/colorWhite"
+                android:text="ส่งข้อมูล"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </RelativeLayout>
+
+</layout>

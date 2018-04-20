@@ -1,0 +1,45 @@
+<layout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <EditText
+
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyz"
+                android:text=""
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColorHint="@color/colorGreen"
+                android:hint="Order ID"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@color/colorGreen"
+                android:padding="8dp"
+                android:gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/edit_text_search"
+                android:drawableTint="@color/colorGreen"
+                android:drawableRight="@drawable/ic_search_black_24dp"
+                android:id="@+id/etSearchID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/etSearchID"
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+        </RelativeLayout>
+
+</layout>
+

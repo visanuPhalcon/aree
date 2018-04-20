@@ -1,0 +1,396 @@
+                                                            
+
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/fragment_step_two_0" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.aree.restaurant.app.fragment.ShoppingCart.StepOneFragment">
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/stepSection"
+                app:layout_heightPercent="20%"
+                android:background="#3078909c"
+                android:layout_marginTop="-15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/StepOneOval"
+                    app:layout_marginLeftPercent="10%"
+                    app:layout_marginTopPercent="5%"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+
+
+                    <View
+                        android:background="@drawable/fill_oval"
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        />
+                    <TextView
+                        android:textSize="24sp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_centerInParent="true"
+                        android:text="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    app:layout_marginLeftPercent="4%"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/StepOneOval"
+                    android:text="รายการอาหาร"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginRight="-1dp"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_toRightOf="@id/StepOneOval"
+                    android:layout_toLeftOf="@+id/StepTwoOval"
+                    android:background="@color/colorPrimary"
+                    android:layout_centerInParent="true"
+                    android:layout_height="7dp"
+                    android:layout_width="match_parent"
+                    />
+
+                <RelativeLayout
+                    android:layout_centerInParent="true"
+                    android:id="@+id/StepTwoOval"
+                    app:layout_marginTopPercent="5%"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+
+
+                    <View
+                        android:background="@drawable/fill_oval"
+                        android:layout_height="40dp"
+                        android:layout_width="40dp"
+                        />
+                    <TextView
+                        android:textSize="24sp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_centerInParent="true"
+                        android:text="2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_marginLeft="-5dp"
+                    android:textStyle="bold"
+                    android:layout_alignLeft="@+id/StepTwoOval"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/StepTwoOval"
+                    android:text="ชำระเงิน"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+
+                <View
+                    android:layout_marginRight="-1dp"
+                    android:layout_marginLeft="-1dp"                        android:layout_toLeftOf="@+id/StepThreeOval"
+                    android:layout_toRightOf="@id/StepTwoOval"
+                    android:background="@color/colorGrey"
+                    android:layout_centerInParent="true"
+                    android:layout_height="7dp"
+                    android:layout_width="match_parent"
+                    />
+
+                <RelativeLayout
+
+                    app:layout_marginRightPercent="10%"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/StepThreeOval"
+                    app:layout_marginTopPercent="5%"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+
+
+                    <View
+                        android:background="@drawable/non_fill_oval"
+                        android:layout_height="40dp"
+                        android:layout_width="40dp"
+                        />
+                    <TextView
+                        android:textSize="24sp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_centerInParent="true"
+                        android:text="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <TextView
+                    app:layout_marginRightPercent="9%"
+
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/StepThreeOval"
+                    android:text="เสร็จสิ้น"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ButtonSection"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/btnConfirmOrder"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:text="คลิกเพื่อสั่งอาหาร"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:background="@drawable/bg_button_orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                    android:id="@+id/sectionTotal"
+                    android:padding="8dp"
+                    android:layout_below="@id/stepSection"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/label_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:layout_margin="4dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:text="฿ 0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/label_free_shipping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <!-- Hard Code   -->
+            <ScrollView
+                android:layout_below="@id/sectionTotal"
+                android:layout_above="@+id/ButtonSection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <android.support.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="18sp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="รายการอาหาร"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            app:layout_marginLeftPercent="61%"
+                            android:textSize="18sp"
+                            android:layout_marginTop="16dp"
+                            android:text="จำนวน"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </android.support.percent.PercentRelativeLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/orderList"
+                        android:orientation="vertical"
+                        android:textSize="18sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="รายการ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorGrey"/>
+
+                    <android.support.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="18sp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="รายการแลกของรางวัล"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            app:layout_marginLeftPercent="61%"
+                            android:textSize="18sp"
+                            android:layout_marginTop="16dp"
+                            android:text="จำนวน"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </android.support.percent.PercentRelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ExchangePointForFoodList"
+                        android:orientation="vertical"
+                        android:textSize="18sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="รายการ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </LinearLayout>
+
+
+
+
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorGrey"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tvShippingCost"
+                        android:textSize="18sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="ค่าจัดส่ง"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorGrey"/>
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:textSize="18sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="ข้อมูลที่อยู่"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tvDate"
+                        android:textSize="18sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="จัดส่ง"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorGrey"/>
+
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+            <!-- Hard Code   -->
+
+
+
+
+        </android.support.percent.PercentRelativeLayout>
+    </FrameLayout>
+         

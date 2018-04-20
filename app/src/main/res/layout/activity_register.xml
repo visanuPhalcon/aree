@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aree.restaurant.app.activity.RegisterActivity">
+
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/appbar_layout"
+            android:id="@+id/included"/>
+
+        <View
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/RegisterSection"
+                android:layout_above="@+id/tvInformation"
+                app:layout_marginBottomPercent="3%"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvFirstName"
+                            app:layout_marginLeftPercent="2%"
+                            style="@style/AppTheme.Text.White"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/label_FirstName"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvLastName"
+                            app:layout_marginLeftPercent="55%"
+                            style="@style/AppTheme.Text.White"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/label_LastName"
+                            />
+
+                        <EditText
+                            android:singleLine="true"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:id="@+id/etFirstName"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="10dp"
+                            android:layout_below="@+id/tvFirstName"
+                            android:background="@drawable/edit_text_register"
+                            android:hint="Heading:"
+                            android:layout_height="40dp"
+                            app:layout_widthPercent="50%"
+                            />
+
+                        <EditText
+                            android:singleLine="true"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:id="@+id/etLastName"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/etFirstName"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="10dp"
+                            android:layout_below="@+id/tvLastName"
+                            android:background="@drawable/edit_text_register"
+                            android:hint="Heading:"
+                            android:layout_height="40dp"
+                            android:layout_width="match_parent"
+                            />
+
+
+                    </android.support.percent.PercentRelativeLayout>
+
+
+
+
+
+                    <android.support.percent.PercentRelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvCompanyName"
+                            app:layout_marginLeftPercent="2%"
+                            style="@style/AppTheme.Text.White"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/label_company_name"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvFloorNo"
+                            app:layout_marginLeftPercent="55%"
+                            style="@style/AppTheme.Text.White"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/label_insert_floor_number"
+                            />
+
+                        <EditText
+                            android:maxLength="20"
+                            android:singleLine="true"
+                            android:id="@+id/etCompanyName"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="10dp"
+                            android:layout_below="@+id/tvCompanyName"
+                            android:background="@drawable/edit_text_register"
+                            android:hint="Heading:"
+                            android:layout_height="40dp"
+                            app:layout_widthPercent="50%"
+                            />
+
+                        <EditText
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:maxLines="1"
+                            android:id="@+id/etFloorNo"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/etCompanyName"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="10dp"
+                            android:layout_below="@+id/tvFloorNo"
+                            android:background="@drawable/edit_text_register"
+                            android:hint="Heading:"
+                            android:layout_height="40dp"
+                            android:layout_width="match_parent"
+                            />
+
+
+                    </android.support.percent.PercentRelativeLayout>
+
+                    <android.support.percent.PercentRelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvPhoneNo"
+                            app:layout_marginLeftPercent="2%"
+                            style="@style/AppTheme.Text.White"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/label_insert_phone_number"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvPhoneNoCompany"
+                            app:layout_marginLeftPercent="55%"
+                            style="@style/AppTheme.Text.White"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/label_insert_phone_number_company"
+                            />
+
+                        <EditText
+
+                            android:maxLength="10"
+                            android:digits="0123456789-"
+                            android:inputType="number"
+                            android:id="@+id/etPhoneNo"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="10dp"
+                            android:layout_below="@+id/tvPhoneNo"
+                            android:background="@drawable/edit_text_register"
+                            android:hint="Heading:"
+                            android:layout_height="40dp"
+                            app:layout_widthPercent="50%"
+                            />
+
+                        <EditText
+                            android:maxLength="10"
+                            android:digits="0123456789-"
+                            android:inputType="number"
+                            android:id="@+id/etPhoneNoCompany"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/etPhoneNo"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="10dp"
+                            android:layout_below="@+id/tvPhoneNoCompany"
+                            android:background="@drawable/edit_text_register"
+                            android:hint="Heading:"
+                            android:layout_height="40dp"
+                            android:layout_width="match_parent"
+                            />
+
+
+                    </android.support.percent.PercentRelativeLayout>
+
+
+                    <android.support.percent.PercentRelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvBirthDay"
+                            app:layout_marginLeftPercent="2%"
+                            style="@style/AppTheme.Text.White"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/label_insert_birth_day"
+                            />
+
+
+
+                        <EditText
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:id="@+id/etBirthDay"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="10dp"
+                            android:layout_below="@+id/tvBirthDay"
+                            android:background="@drawable/edit_text_register"
+                            android:hint="Heading:"
+                            android:layout_height="40dp"
+                            app:layout_widthPercent="50%"
+                            />
+
+
+                    </android.support.percent.PercentRelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        app:layout_marginLeftPercent="2%"
+                        style="@style/AppTheme.Text.White"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/label_insert_email"
+                        />
+
+                    <EditText
+                        android:digits="0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz@.+-_"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:nextFocusDown="@+id/etPassword"
+                        android:maxLines="1"
+                        android:maxLength="30"
+                        android:id="@+id/etEmail"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/edit_text_register"
+                        android:hint="example@gmail.com"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tvUsername"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        app:layout_marginLeftPercent="2%"
+                        style="@style/AppTheme.Text.White"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/label_insert_username"
+                        />
+
+                    <EditText
+                        android:digits="0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz@.+-_"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:nextFocusDown="@+id/etPassword"
+                        android:maxLines="1"
+                        android:maxLength="30"
+                        android:id="@+id/etUsername"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/edit_text_register"
+                        android:hint="Username"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvPassword"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        app:layout_marginLeftPercent="2%"
+                        style="@style/AppTheme.Text.White"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/label_set_password"
+                        />
+
+                    <EditText
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:inputType="textPassword"
+                        android:id="@+id/etPassword"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/edit_text_register"
+                        android:hint="รหัสผ่าน"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tvPasswordRepeat"
+                        android:maxLength="20"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        app:layout_marginLeftPercent="2%"
+                        style="@style/AppTheme.Text.White"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/label_insert_password_again"
+                        />
+
+                    <EditText
+                        android:maxLines="1"
+                        android:inputType="textPassword"
+                        android:id="@+id/etPasswordRepeat"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/edit_text_register"
+                        android:hint="Heading:"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        />
+
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:textSize="14sp"
+                android:id="@+id/tvInformation"
+                android:textStyle="bold"
+                android:gravity="center"
+                style="@style/AppTheme.Text.White"
+                android:text="@string/label_fyi"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_above="@+id/btnRegister"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentBottom="true"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/bg_button_orange"
+                android:text="@string/label_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>

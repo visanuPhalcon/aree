@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aree.restaurant.app.activity.RedeemRewardActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/headerSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/appbar_layout"
+            android:id="@+id/included"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true">
+
+
+            <com.aree.restaurant.app.views.BasketView
+                android:id="@+id/basketView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    
+    <LinearLayout
+        android:id="@+id/myPoint"
+        android:layout_below="@id/headerSection"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:layout_gravity="center"
+            android:tint="@color/colorPrimary"
+            android:src="@drawable/ic_point"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/tvPoints"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="5,000 Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/DescriptionSection"
+        android:layout_below="@id/myPoint"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/DescriptionSection"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    <ViewStub
+        android:layout_below="@id/headerSection"
+        android:id="@+id/viewStubRewardList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inflatedId="@+id/rewardList"
+        android:layout="@layout/dialog_show_reward" />
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+</layout>

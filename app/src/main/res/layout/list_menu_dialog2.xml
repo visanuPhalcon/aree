@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/HeaderSection"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tvTitle"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/imgClose"
+                        android:layout_centerInParent="true"
+                        android:textSize="18sp"
+                        style="@style/AppTheme.Text.White"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imgClose"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_close"
+                        android:layout_width="20dp"
+                        android:layout_height="25dp" />
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/seaFoodSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/tvMenuList"
+                        style="@style/AppTheme.Text.Grey"
+                        android:layout_marginTop="10dp"
+                        app:layout_marginLeftPercent="14%"
+                        android:text="@string/label_menu_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <RadioGroup
+                        app:layout_widthPercent="50%"
+                        android:layout_marginTop="10dp"
+                        app:layout_marginLeftPercent="5%"
+                        android:layout_below="@+id/tvMenuList"
+                        android:id="@+id/radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/imgFoodPhoto"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignTop="@+id/radio_group"
+                        android:layout_toRightOf="@+id/radio_group"
+                        android:layout_height="100dp"
+                        android:layout_width="100dp"
+                        />
+
+                    <ImageView
+                        android:backgroundTint="@color/colorPrimary"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/ic_arrow_down"
+                        android:id="@+id/ArrowForFood"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignTop="@+id/tvMenuList"
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        />
+
+
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/line1"
+                    android:alpha="0.3"
+                    android:background="@color/colorGrey"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+
+
+                <android.support.percent.PercentRelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/generalFoodSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/tvGeneralMenuList"
+                        style="@style/AppTheme.Text.Grey"
+                        android:layout_marginTop="10dp"
+                        app:layout_marginLeftPercent="14%"
+                        android:text="@string/label_menu_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <RadioGroup
+                        app:layout_widthPercent="50%"
+                        android:layout_marginTop="10dp"
+                        app:layout_marginLeftPercent="5%"
+                        android:layout_below="@+id/tvGeneralMenuList"
+                        android:id="@+id/radio_group_GeneralFood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/imgGeneralFoodPhoto"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignTop="@+id/radio_group_GeneralFood"
+                        android:layout_toRightOf="@+id/radio_group_GeneralFood"
+                        android:layout_height="100dp"
+                        android:layout_width="100dp"
+                        />
+
+                    <ImageView
+                        android:backgroundTint="@color/colorPrimary"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/ic_arrow_down"
+                        android:id="@+id/ArrowForGeneralFood"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignTop="@+id/tvGeneralMenuList"
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        />
+
+
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/line3"
+                    android:alpha="0.3"
+                    android:background="@color/colorGrey"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+
+
+                <android.support.percent.PercentRelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/snackSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/tvSnackMenuList"
+                        style="@style/AppTheme.Text.Grey"
+                        android:layout_marginTop="10dp"
+                        app:layout_marginLeftPercent="14%"
+                        android:text="@string/label_menu_dessert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <RadioGroup
+                        app:layout_widthPercent="50%"
+                        android:layout_marginTop="10dp"
+                        app:layout_marginLeftPercent="5%"
+                        android:layout_below="@+id/tvSnackMenuList"
+                        android:id="@+id/radio_group_Snack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/imgSnackPhoto"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignTop="@+id/radio_group_Snack"
+                        android:layout_toRightOf="@+id/radio_group_Snack"
+                        android:layout_height="100dp"
+                        android:layout_width="100dp"
+                        />
+
+                    <ImageView
+                        android:backgroundTint="@color/colorPrimary"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/ic_arrow_down"
+                        android:id="@+id/ArrowForSnack"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignTop="@+id/tvSnackMenuList"
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        />
+
+
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/line4"
+                    android:alpha="0.3"
+                    android:background="@color/colorGrey"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+
+
+                <android.support.percent.PercentRelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/BeveragesSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvBeverageList"
+                        style="@style/AppTheme.Text.Grey"
+                        android:layout_marginTop="10dp"
+                        app:layout_marginLeftPercent="10%"
+                        android:text="@string/label_beverage_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <RadioGroup
+                        style="@style/AppTheme.Text.Grey"
+                        app:layout_widthPercent="50%"
+                        android:layout_marginTop="10dp"
+                        app:layout_marginLeftPercent="5%"
+                        android:layout_below="@+id/tvBeverageList"
+                        android:id="@+id/radio_group2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/imgBeveragePhoto"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignTop="@+id/radio_group2"
+                        android:layout_toRightOf="@+id/radio_group2"
+                        android:layout_height="100dp"
+                        android:layout_width="100dp"
+                        />
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/line2"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.3"
+                    android:background="@color/colorGrey"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_toLeftOf="@+id/tvAmount"
+                        android:id="@+id/btnDecrease"
+                        android:src="@drawable/ic_remove"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+
+
+                    <TextView
+                        android:text="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/btnAdd"
+                        android:id="@+id/tvAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/btnAdd"
+                        android:src="@drawable/ic_add"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+
+
+                </android.support.percent.PercentRelativeLayout>
+
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:text="รวม"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:text=""
+                        android:id="@+id/tvTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <Button
+                    android:id="@+id/btnOrder"
+                    android:textColor="@color/colorWhite"
+                    android:text="คลิกเพื่อสั่งอาหาร"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_button_orange"
+                    android:layout_margin="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+
+            </LinearLayout>
+    </ScrollView>
+</layout>

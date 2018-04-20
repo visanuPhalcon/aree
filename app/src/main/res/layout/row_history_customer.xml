@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.percent.PercentRelativeLayout
+    android:id="@+id/row"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="95dp">
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:background="@drawable/circle"-->
+        <!--android:id="@+id/imgDelete"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_width="40dp"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:src="@drawable/ic_clear_white_36dp"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp" />-->
+
+    <!--</RelativeLayout>-->
+
+
+
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:id="@+id/tvDate"
+        android:textSize="14sp"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:ellipsize="end"
+        android:maxLength="25"
+        android:maxLines="2"
+        android:text="tvDate"
+        app:layout_widthPercent="50%"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+
+    <TextView
+
+        android:layout_alignLeft="@+id/tvDate"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/tvDate"
+        android:id="@+id/tvID"
+        android:textSize="14sp"
+        app:layout_marginTopPercent="1%"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:ellipsize="end"
+        android:maxLength="25"
+        android:maxLines="2"
+        android:text="tvID"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+
+    <TextView
+        android:layout_alignLeft="@+id/tvDate"
+        android:id="@+id/tvTotal"
+        android:layout_below="@+id/tvID"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:gravity="right"
+        android:text="tvTotal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+
+
+    <TextView
+        android:layout_alignLeft="@+id/tvDate"
+        android:id="@+id/tvPoint"
+        android:layout_below="@+id/tvTotal"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:gravity="right"
+        android:text="tvPoint"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:id="@+id/btnOrder"
+        app:layout_marginTopPercent="2%"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="@string/label_order"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        />
+
+</android.support.percent.PercentRelativeLayout>
+</layout>

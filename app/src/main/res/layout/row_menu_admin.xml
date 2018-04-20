@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.percent.PercentRelativeLayout
+        android:layout_margin="16dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/tvNameMenu"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            app:layout_marginTopPercent="2%"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="ข้าวผัดไก่อารีย์"
+            app:layout_widthPercent="50%"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/tvAmount"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/tvNameMenu"
+            android:textSize="18sp"
+            app:layout_marginTopPercent="2%"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:gravity="end"
+            android:text="จำนวน 10 กล่อง"
+            app:layout_widthPercent="15%"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+
+
+    </android.support.percent.PercentRelativeLayout>
+</layout>

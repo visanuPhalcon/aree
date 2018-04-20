@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_above="@+id/btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.aree.restaurant.app.activity.OrderDetailActivity">
+
+        <include
+            layout="@layout/appbar_layout"
+            android:id="@+id/included"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#57890e"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16dp"
+                app:layout_marginTopPercent="5%"
+                android:layout_alignParentLeft="true"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgProfile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/source_human"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorWhite"/>
+
+
+            <LinearLayout
+                android:id="@+id/profileSection"
+                app:layout_widthPercent="60%"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/imgProfile"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:text="คุณ abc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="คุณ abc"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvPhoneNo"
+                    android:text="คุณ abc"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--<Button-->
+                <!--android:textStyle="bold"-->
+                <!--android:id="@+id/btnOrder"-->
+                <!--android:layout_toRightOf="@+id/profileSection"-->
+                <!--android:textSize="14sp"-->
+                <!--android:text="รับ Order"-->
+                <!--android:background="@drawable/bg_button_orange"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_margin="16dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="140dp"-->
+                <!--/>-->
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <!-- Hard Code   -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="รายการ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        app:layout_marginLeftPercent="61%"
+                        android:textSize="18sp"
+                        android:layout_marginTop="16dp"
+                        android:text="จำนวน"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </android.support.percent.PercentRelativeLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/orderList"
+                    android:orientation="vertical"
+                    android:textSize="18sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="รายการ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorGrey"/>
+
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:textSize="18sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="รายการแลกของรางวัล"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:id="@+id/ExchangePointForFoodList"
+                    android:orientation="vertical"
+                    android:textSize="18sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="รายการ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </LinearLayout>
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorGrey"/>
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:textSize="18sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="ค่าจัดส่ง"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/tvShippingCost"
+                        android:textSize="18sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorGrey"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:textSize="18sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="รวม"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/tvTotalCost"
+                        android:textSize="18sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:text="พร้อมจัดส่ง"
+        android:background="@drawable/bg_button_orange"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+</layout>

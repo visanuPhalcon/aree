@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                            
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.aree.restaurant.app.activity.OrderActivity" android:tag="layout/activity_admin_0" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <LinearLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:tag="binding_1">
+
+
+            <include
+                layout="@layout/appbar_layout"
+                android:id="@+id/included"/>
+
+            <com.ogaclejapan.smarttablayout.SmartTabLayout
+                android:id="@+id/viewPagerTab"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/bg_orange"
+                app:stl_distributeEvenly="true"
+                app:stl_indicatorColor="@color/colorWhite"
+                app:stl_indicatorInterpolation="linear"
+                app:stl_indicatorThickness="5dp"
+                app:stl_underlineThickness="0dp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imgLogout"-->
+            <!--android:layout_margin="16dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:src="@drawable/ic_power_settings_new_white_36dp"-->
+            <!--android:layout_width="24dp"-->
+            <!--android:layout_height="24dp" />-->
+
+    </RelativeLayout>
+         

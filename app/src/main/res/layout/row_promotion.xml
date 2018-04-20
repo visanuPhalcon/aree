@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <RelativeLayout
+        android:id="@+id/imgSetMenu"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/imgPromotion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:paddingLeft="16dp"
+            android:gravity="center|left"
+            android:textSize="18sp"
+            android:text=""
+            android:id="@+id/tvSetMenu"
+            style="@style/AppTheme.Text.White"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/colorBlackOpacity"/>
+
+
+
+    </RelativeLayout>
+</layout>
